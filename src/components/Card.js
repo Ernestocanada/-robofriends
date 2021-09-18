@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ name, email, id }) => {
+const Card = ({ name, email, id, phone }) => {
   //Same as above const { name, email, id } = props;
   return (
     <div className="tc bg-light-green dib br3 ma4 grow bw2 shadow-5">
@@ -8,6 +8,7 @@ const Card = ({ name, email, id }) => {
       <div>
         <h2>{name}</h2>
         <p>{email}</p>
+        <p>Phone: {phone}</p>
       </div>
     </div>
   );
